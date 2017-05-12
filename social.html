@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Party Planning App</title>
+        <link rel="stylesheet"; type="text/css"; href="social.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="social.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+      <div class="jumbotron">
+          <h1>Welcome to the Party Planning App!</h1>
+      </div>
+
+      <div id="initial" >
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">How many people do you plan on having?</span>
+            <input type="text" class="form-control" placeholder="Enter a number..." aria-describedby="basic-addon1" id="people">
+          </div>
+
+
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">What is your alcohol budget?</span>
+              <input type="text" class="form-control" placeholder="Enter a number..." aria-describedby="basic-addon1" id="budget">
+            </div>
+
+
+
+
+        <div id="container2">
+          <div class="inputField"><div>What is your desired drunkenness level?</div>
+
+          <div class="slider">
+            <input type="range" min="0" max="10" value="5" step=".01" onchange="drunkValue(Math.round(this.value))"/>
+              <div id="drunkenness" style="text-align:center;">5</div>
+              <script type="text/javascript">
+                  function drunkValue(newValue)
+                  {document.getElementById("drunkenness").innerHTML=newValue;}
+						  </script>
+            </div>
+          </div>
+          <div class="inputField">
+          <div>What kind of music do you want to listen to?</div>
+
+            <label class="checkbox-inline"><input type="checkbox" id="hiphop">Hip-Hop</label>
+            <label class="checkbox-inline"><input type="checkbox" id="electronic">Electronic</label>
+            <label class="checkbox-inline"><input type="checkbox" id="throwbacks">Throwbacks</label>
+            <label class="checkbox-inline"><input type="checkbox" id="pop">Pop</label>
+
+        </div>
+
+    <div class="inputField">
+          <div>What kind of food do you want to eat?</div>
+
+            <label class="checkbox-inline"><input type="checkbox" id="pizza">Pizza</label>
+            <label class="checkbox-inline"><input type="checkbox" id="wings">Wings</label>
+            <label class="checkbox-inline"><input type="checkbox" id="subs">Subs</label>
+            <label class="checkbox-inline"><input type="checkbox" id="pasta">Pasta</label>
+
+        </div>
+
+
+    <div class="inputField">
+          <div class="inputLiqour" >How much do you like all types of liquor?
+
+            <div class="slider">
+              <input type="range" min="0" max="10" value="5" step=".01" onchange="liquorValue(Math.round(this.value))"/>
+              <div id="liquor" style="text-align:center; margin-bottom:20px">5</div>
+              <script type="text/javascript">
+                function liquorValue(newValue)
+                {document.getElementById("liquor").innerHTML=newValue;}
+						  </script>
+            </div>
+
+            <div id = "liquorTypes">What types of liquor would you like?</div>
+              <div>
+                <label class="checkbox-inline"><input type="checkbox" id="vodka">Vodka</label>
+                <label class="checkbox-inline"><input type="checkbox" id="gin">Gin</label>
+                <label class="checkbox-inline"><input type="checkbox" id="tequila">Tequila</label>
+                <label class="checkbox-inline"><input type="checkbox" id="rum">Rum</label>
+              </div>
+            </div>
+
+          <div class="inputBeer"> How much do you like beer?
+            <div class="slider">
+              <input type="range" min="0" max="10" value="5" step=".01" onchange="beerValue(Math.round(this.value))"/>
+              <div id="beer" style="text-align:center;">5</div>
+              <script type="text/javascript">
+                function beerValue(newValue)
+                {document.getElementById("beer").innerHTML=newValue;}
+						  </script>
+            </div>
+
+          </div>
+        <div class="inputWine">How much do you like wine?
+            <div class="slider">
+              <input type="range" min="0" max="10" value="5" step=".01" onchange="wineValue(Math.round(this.value))"/>
+              <div id="wine" style="text-align:center;">5</div>
+              <script type="text/javascript">
+                function wineValue(newValue)
+                {document.getElementById("wine").innerHTML=newValue;}
+						  </script>
+            </div></div>
+          </div>
+
+          <div class="button1"><button type="button" class="btn btn-danger" onclick="start()">Let's Party!</button></div>
+    </body>
+      </div>
+
+<html>

@@ -1,0 +1,137 @@
+.jumbotron {
+  text-align: center;
+}
+
+.input-group {
+  width:80%;
+  padding: 5px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputField {
+  width:80%;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-style:solid;
+  border-color:gray;
+  border-width: 2px;
+  border-radius:10px;
+  padding:5px;
+}
+
+.inputLiqour {
+  width:auto;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  margin-bottom:5px;
+  border-style:solid;
+  border-color:lightblue;
+  border-width: 3px;
+  border-radius:10px;
+  padding:5px;
+
+}
+.slider{
+  padding:6px 3px 0px 3px;
+}
+#liquorTypes{
+  margin:0px;
+  padding:0px;
+}
+.inputBeer {
+  width:auto;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:5px;
+  margin-bottom:5px;
+  border-style:solid;
+  border-color:#ffcc66;
+  border-width: 3px;
+  border-radius:10px;
+  padding:5px;
+
+}
+.inputWine {
+  width:auto;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:5px;
+  margin-bottom:10px;
+  border-style:solid;
+  border-color:#ffb3b3;
+  border-width: 3px;
+  border-radius:10px;
+  padding:5px;
+}
+
+.button1 {width:100%;
+  margin-top:30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.output {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  flex-grow:1;
+  justify-content: center;
+}
+.alcOutput {
+  padding:5px;
+  width:300px;
+  height:auto;
+  background: lightblue;
+  border: solid;
+  border-width:5;
+  text-align: center;
+  border-radius:10px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.priceOutput {
+  padding:5px;
+  width:300px;
+  height:auto;
+  background: lightgreen;
+  border: solid;
+  border-width:5;
+  text-align: center;
+  border-radius:10px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.musicOutput{
+  padding:5px;
+  width:300px;
+  height:auto;
+  background: lightblue;
+  border: solid;
+  border-width:5;
+  text-align: center;
+  border-radius:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
